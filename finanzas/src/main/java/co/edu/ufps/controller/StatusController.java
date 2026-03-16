@@ -9,6 +9,6 @@ public class StatusController {
 
     @GetMapping({"/", "/status"})
     public ResponseApi<String> status() {
-        return new ResponseApi<>("API is running", 200, "OK");
+        return new ResponseApi<String>("API is running", 200, "OK");
     }
 }
